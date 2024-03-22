@@ -1,4 +1,8 @@
 # 2c.SIMULATING ARP /RARP PROTOCOLS
+
+# Developed by:Iswarya P
+# Reg no: 212223230082
+
 ## AIM
 To write a python program for simulating ARP protocols using TCP.
 ## ALGORITHM:
@@ -15,11 +19,17 @@ To write a python program for simulating ARP protocols using TCP.
 stored.
 4. Read the IP address which is send by the client.
 5. Map the IP address with its MAC address and return the MAC address to client.
-P
-## PROGRAM - ARP
-## OUPUT - ARP
-## PROGRAM - RARP
-## OUPUT -RARP
+
+## PROGRAM 
+# Client:
+![client2c](https://github.com/Iswarya0580/2c.ARP_RARP_PROTOCOLS/assets/149989171/26b115b0-6ddf-47e0-8e6a-2eed648ffb16)
+# Server
+![server2c](https://github.com/Iswarya0580/2c.ARP_RARP_PROTOCOLS/assets/149989171/8f5ba69a-7ee9-44e8-8209-1e85b6516f4e)
+
+## OUTPUT 
+![2c output](https://github.com/Iswarya0580/2c.ARP_RARP_PROTOCOLS/assets/149989171/e002d90e-f9db-4d10-8144-ed3a40b1e47b)
+
+
 ## RESULT
 Thus, the python program for simulating ARP protocols using TCP was successfully 
 executed.
