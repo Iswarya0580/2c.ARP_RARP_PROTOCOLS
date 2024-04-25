@@ -22,10 +22,30 @@ stored.
 
 ## PROGRAM 
 # Client:
-![client2c](https://github.com/Iswarya0580/2c.ARP_RARP_PROTOCOLS/assets/149989171/26b115b0-6ddf-47e0-8e6a-2eed648ffb16)
+```
+import socket
+s=socket.socket()
+s.bind(('localhost',8000))
+s.listen(5)
+c,addr=s.accept()
+address={"165.165.80.80":"6A:08:AA:C2","165.165.79.1":"8A:BC:E3:FA"};
+while True:
+ ip=c.recv(1024).decode()
+ try:
+ c.send(address[ip].encode())
+ except KeyError:
+ c.send("Not Found".encode())
+```
 # Server
-![server2c](https://github.com/Iswarya0580/2c.ARP_RARP_PROTOCOLS/assets/149989171/8f5ba69a-7ee9-44e8-8209-1e85b6516f4e)
-
+```
+import socket
+s=socket.socket()
+s.connect(('localhost',8000))
+while True:
+ ip=input("Enter logical Address : ")
+ s.send(ip.encode())
+ print("MAC Address",s.recv(1024).decode())
+```
 ## OUTPUT 
 ![2c output](https://github.com/Iswarya0580/2c.ARP_RARP_PROTOCOLS/assets/149989171/e002d90e-f9db-4d10-8144-ed3a40b1e47b)
 
